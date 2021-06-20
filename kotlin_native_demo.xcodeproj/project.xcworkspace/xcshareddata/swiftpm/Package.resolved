@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "kotlin_demo_lib",
+        "repositoryURL": "/Users/zhoukaiwen/GitHub/kotlin_demo_lib",
+        "state": {
+          "branch": "main",
+          "revision": "e9a5536a9e7ea91bcca4da0a89b5c32f83939688",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

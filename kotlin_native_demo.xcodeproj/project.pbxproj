@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		7CD7435A267F940900C079DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CD74358267F940900C079DF /* Main.storyboard */; };
 		7CD7435C267F940A00C079DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CD7435B267F940A00C079DF /* Assets.xcassets */; };
 		7CD7435F267F940A00C079DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CD7435D267F940A00C079DF /* LaunchScreen.storyboard */; };
+		7CD7436B267F951A00C079DF /* kotlin_demo_lib in Frameworks */ = {isa = PBXBuildFile; productRef = 7CD7436A267F951A00C079DF /* kotlin_demo_lib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CD7436B267F951A00C079DF /* kotlin_demo_lib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = kotlin_native_demo;
+			packageProductDependencies = (
+				7CD7436A267F951A00C079DF /* kotlin_demo_lib */,
+			);
 			productName = kotlin_native_demo;
 			productReference = 7CD7434F267F940900C079DF /* kotlin_native_demo.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +115,9 @@
 				Base,
 			);
 			mainGroup = 7CD74346267F940900C079DF;
+			packageReferences = (
+				7CD74369267F951A00C079DF /* XCRemoteSwiftPackageReference "kotlin_demo_lib" */,
+			);
 			productRefGroup = 7CD74350267F940900C079DF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7CD74369267F951A00C079DF /* XCRemoteSwiftPackageReference "kotlin_demo_lib" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "file:///Users/zhoukaiwen/GitHub/kotlin_demo_lib";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7CD7436A267F951A00C079DF /* kotlin_demo_lib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7CD74369267F951A00C079DF /* XCRemoteSwiftPackageReference "kotlin_demo_lib" */;
+			productName = kotlin_demo_lib;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7CD74347267F940900C079DF /* Project object */;
 }
