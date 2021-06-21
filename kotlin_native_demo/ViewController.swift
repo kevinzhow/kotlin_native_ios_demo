@@ -7,7 +7,7 @@
 
 import UIKit
 import kotlin_demo_lib
-import happy_lib
+import HappyNasa
 
 class ViewController: UIViewController {
 
@@ -18,8 +18,12 @@ class ViewController: UIViewController {
         print(a)
 
         let nasaClient = NASA.init(apiKey: "JOdbdzShYX1MxEflQ0V0u9rNhBorfReMx4CGwg0k")
-        nasaClient.getAPOD { json, error in
-            print(json)
+        nasaClient.getAPOD { apod, error in
+            if let apod = apod {
+                print(apod.title)
+            } else {
+                print("Get apod failed")
+            }
         }
         // Do any additional setup after loading the view.
     }
