@@ -25,6 +25,8 @@
 		7CD7435B267F940A00C079DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CD7435E267F940A00C079DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CD74360267F940A00C079DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CD7436C267FA8BA00C079DF /* kotlin_native_demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kotlin_native_demo.entitlements; sourceTree = "<group>"; };
+		7CD7436E2680C8DF00C079DF /* libquic.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libquic.tbd; path = usr/lib/libquic.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 			children = (
 				7CD74351267F940900C079DF /* kotlin_native_demo */,
 				7CD74350267F940900C079DF /* Products */,
+				7CD7436D2680C8DF00C079DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +61,7 @@
 		7CD74351267F940900C079DF /* kotlin_native_demo */ = {
 			isa = PBXGroup;
 			children = (
+				7CD7436C267FA8BA00C079DF /* kotlin_native_demo.entitlements */,
 				7CD74352267F940900C079DF /* AppDelegate.swift */,
 				7CD74354267F940900C079DF /* SceneDelegate.swift */,
 				7CD74356267F940900C079DF /* ViewController.swift */,
@@ -67,6 +71,14 @@
 				7CD74360267F940A00C079DF /* Info.plist */,
 			);
 			path = kotlin_native_demo;
+			sourceTree = "<group>";
+		};
+		7CD7436D2680C8DF00C079DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CD7436E2680C8DF00C079DF /* libquic.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +306,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = kotlin_native_demo/kotlin_native_demo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZF6B5F34CY;
 				INFOPLIST_FILE = kotlin_native_demo/Info.plist;
@@ -303,6 +316,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "kevinzhow.kotlin-native-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,6 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = kotlin_native_demo/kotlin_native_demo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZF6B5F34CY;
 				INFOPLIST_FILE = kotlin_native_demo/Info.plist;
@@ -322,6 +337,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "kevinzhow.kotlin-native-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
